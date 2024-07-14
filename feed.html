@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feed - Barber Ya App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(to right, blue, white, red);
+            color: black;
+            padding: 1rem;
+            text-align: center;
+            position: relative;
+        }
+        header img {
+            position: absolute;
+            left: 20px;
+            height: 100px; /* Ajusta este valor para cambiar la altura del logo */
+            width: auto; /* Mantiene la proporción del logo */
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .form-group button {
+            width: 100%;
+            padding: 10px;
+            background-color: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .form-group button:hover {
+            background-color: darkblue;
+        }
+        .feed {
+            margin-top: 30px;
+        }
+        .post {
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .post h3 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="C:\Users\juang\OneDrive\Desktop\Barberya app\Logo 2.png" alt="Logo">
+        <h1>Barber Ya App</h1>
+    </header>
+    <div class="container">
+        <h2>Subir Contenido</h2>
+        <form action="pagina_de_subida.php" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="title">Título</label>
+                <input type="text" id="title" name="title" required>
+            </div>
+            <div class="form-group">
+                <label for="content">Contenido</label>
+                <textarea id="content" name="content" rows="5" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="image">Imagen</label>
+                <input type="file" id="image" name="image" accept="image/*">
+            </div>
+            <div class="form-group">
+                <button type="submit">Subir</button>
+            </div>
+        </form>
+        <div class="feed">
+            <h2>Feed</h2>
+            <!-- Ejemplo de publicación -->
+            <div class="post">
+                <h3>Título de la Publicación</h3>
+                <p>Contenido de la publicación. Este es un ejemplo de cómo se verá una publicación en el feed.</p>
+                <img src="" alt="Descripción de la imagen" style="width: 100%; height: auto;">
+            </div>
+            <!-- Más publicaciones se añadirán aquí dinámicamente -->
+        </div>
+    </div>
+</body>
+</html

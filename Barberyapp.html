@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barber Ya App</title>
+    <style>
+        body {
+            font-family: Arial, Impact, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(to right, blue, white, red);
+            color: black;
+            padding: 1rem;
+            text-align: center;
+            position: relative;
+        }
+        header img {
+            position: absolute;
+            left: 20px;
+            height: 100px; 
+        }
+        .container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .form-group button {
+            width: 100%;
+            padding: 10px;
+            background-color: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .form-group button:hover {
+            background-color: darkblue;
+        }
+        .form-links {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        .form-links a {
+            color: blue;
+            text-decoration: none;
+        }
+        .form-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="C:\Users\juang\OneDrive\Desktop\Barberya app\Logo 2.png" alt="Logo">
+        <h1>Barber Ya App</h1>
+    </header>
+    <div class="container">
+        <h2>Iniciar Sesión</h2>
+        <form>
+            <div class="form-group">
+                <label for="username">Usuario</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Ingresar</button>
+            </div>
+            <div class="form-links">
+                <a href="C:\Users\juang\OneDrive\Desktop\Curso CSS\Barberyapp.html\Formulariod de registro.html" target="_blank">Registrarse</a>
+                <a href="C:\Users\juang\OneDrive\Desktop\Curso CSS\Barberyapp.html\modulo de recuperacion.html"  target="_blank">Olvidé mi contraseña</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
