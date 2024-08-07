@@ -86,6 +86,30 @@
             width: 100%;
             box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
         }
+        
+        /* Media Queries */
+        @media (min-width: 600px) {
+            .container {
+                max-width: 80%;
+            }
+        }
+        @media (min-width: 768px) {
+            .container {
+                max-width: 60%;
+            }
+            .form-links {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .form-links a {
+                margin-bottom: 0;
+            }
+        }
+        @media (min-width: 1024px) {
+            .container {
+                max-width: 50%;
+            }
+        }
     </style>
 </head>
 <body>
