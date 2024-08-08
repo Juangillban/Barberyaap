@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://raw.githubusercontent.com/Juangillban/Barberyapp/main/icono%20barber%20ya%20.ico" type="image/x-icon">
     <title>Barber Ya App</title>
+    
     <style>
         body {
             font-family: Arial, Impact, sans-serif;
@@ -111,7 +113,7 @@
             box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
         }
 
-        /* Media Queries */
+        
         @media (max-width: 600px) {
             header {
                 flex-direction: column;
@@ -172,13 +174,13 @@
     </footer>
 
     <script>
-        // Añadir un evento de click al botón de ingresar para mostrar una alerta
+        
         document.querySelector('button[type="submit"]').addEventListener('click', function(event) {
             event.preventDefault(); // Evitar el envío del formulario
             alert('Iniciando sesión...');
         });
 
-        // Añadir animación de entrada a los elementos del formulario
+
         document.addEventListener('DOMContentLoaded', function() {
             const formElements = document.querySelectorAll('.form-group');
             formElements.forEach((element, index) => {
